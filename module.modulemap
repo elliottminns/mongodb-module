@@ -1,0 +1,4 @@
+module MongoMac [system] {
+    header "/usr/local/Cellar/mongo-c/1.1.6/include/libmongoc-1.0/mongoc.h"
+    export *
+}
