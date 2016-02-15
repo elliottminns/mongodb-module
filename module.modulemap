@@ -1,4 +1,12 @@
-module MongoMac [system] {
-    header "/usr/local/Cellar/mongo-c/1.1.6/include/libmongoc-1.0/mongoc.h"
+module bsonMac [system] {
+    umbrella header "/usr/local/opt/libbson/include/libbson-1.0/bson.h"
+    header "/usr/local/opt/libbson/include/libbson-1.0/bcon.h"
+    link "bson-1.0"
+    export *
+}
+
+module mongocMac [system] {
+    umbrella header "/usr/local/opt/mongo-c/include/libmongoc-1.0/mongoc.h"
+    link "mongoc-1.0"
     export *
 }
