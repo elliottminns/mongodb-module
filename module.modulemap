@@ -4,26 +4,8 @@ module CMongoC [system] {
     export *
 }
 
-module bsonMac [system] {
-    header "/usr/local/opt/libbson/include/libbson-1.0/bson.h"
-    link "bson-1.0"
-    export *
-}
-
-module mongocMac [system] {
-    header "/usr/local/opt/mongo-c/include/libmongoc-1.0/mongoc.h"
-    link "mongoc-1.0"
-    export *
-}
-
-module bsonLinux [system] {
+module CBSON [system] {
     header "/usr/local/include/libbson-1.0/bson.h"
-    link "bson-1.0"
-    export *
-}
-
-module mongocLinux [system] {
-    header "/usr/local/include/libmongoc-1.0/mongoc.h"
-    link "mongoc-1.0"
+    link "bson-1.0.0"
     export *
 }
