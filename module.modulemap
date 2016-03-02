@@ -1,3 +1,9 @@
+module CMongoC [system] {
+    header "/usr/local/include/libmongoc-1.0/mongoc.h"
+    link "mongoc"
+    export *
+}
+
 module bsonMac [system] {
     header "/usr/local/opt/libbson/include/libbson-1.0/bson.h"
     link "bson-1.0"
